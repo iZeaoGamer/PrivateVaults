@@ -203,7 +203,7 @@ class PrivateVaults extends PluginBase implements Listener {
 		}
 	}
 
-	public function onCommand(CommandSender $sender, Command $cmd, $label, array $args) {
+	public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
 		if($sender instanceof Player) {
 			switch ($cmd->getName()) {
 				case "pv":
